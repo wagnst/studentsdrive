@@ -1,0 +1,152 @@
+/*
+ ***************** Author ******************
+ * Copyright 2013, Steffen Wagner
+ * mail [AT] steffenwagner [dot] com
+ * http://www.steffenwagner.com
+ *******************************************
+ */
+	body {
+		height: 100%;
+	}
+	
+	@media (min-width: 980px) {
+		.main_body {
+			padding-top: 70px;
+		}	
+	}
+	
+	/* Custom container */
+	/* Wrapper for page content to push down footer */
+	.wrap {
+		min-height: 100%;
+		height: auto !important;
+		height: 100%;
+		/* Negative indent footer by it's height */
+		margin: 0 auto -60px;
+	}  
+	
+	.well {
+		margin-right: -20px;
+	}
+	.container-narrow {
+		margin: 0 auto;
+		max-width: 700px;
+
+	}
+	.container-narrow > hr {
+		margin: 30px 0;
+	}
+
+	/* Main message and picture */
+	.jumbotron {
+	margin: 60px 0;
+	text-align: center;
+	}
+	.jumbotron h1 {
+		font-size: 72px;
+		line-height: 1;
+	}
+	.jumbotron .btn {
+		font-size: 21px;
+		padding: 14px 24px;
+	}
+
+	/* Set the fixed height of the footer here */
+	#push,
+	#footer {
+	/*height: 60px;*/
+		padding-top: 20px;
+		border: 1px solid #DCDCDC;
+	}
+	#footer {
+		background-color: #f5f5f5;
+	}
+
+	.container {
+		width: auto;
+		max-width: 680px;
+	}
+	.container .credit {
+	margin: 20px 0;
+	}
+	/* Lastly, apply responsive CSS fixes as necessary */
+	@media (max-width: 767px) {
+	#footer {
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	}
+
+	/* alternativer FB Login button */
+	a.facebookbutton {
+	  margin: 0 auto 10px;
+
+	  display: block;
+	  width: 250px;
+	  height: 42px;	
+	  background-image:url(../img/login-fb.png);
+	}
+	a.facebookbutton:hover {
+	  background-image:url(../img/login-fb-hover.png);
+	} 
+	a.facebookbutton:active {
+	  background-image:url(../img/login-fb-active.png);
+	} 	
+	
+	/* Stats Page */
+
+	.bar {
+		margin-right:1px;
+		margin-left:1px;
+		background-color:#81BEF7;
+		font-size:0.8em;
+
+	}
+	.vbar {
+		height:20px;
+		background-color:#81BEF7;
+
+	}
+	.bar:hover {
+		margin-right:1px;
+
+		background-color:#2E9AFE;
+
+	}
+
+	.timeline {
+		border-left:1px #DDDDDD solid;
+		font-size:0.8em;
+		color:#333333;
+	}
+	
+	/* IMG Upload */
+	.jcrop-holder {
+		display: inline-block;
+	}	
+	.imgupload {
+		color: #000;
+		overflow: hidden;
+		padding-bottom: 20px;
+		text-align: center;
+		background: -moz-linear-gradient(#ffffff, #f2f2f2);
+		background: -ms-linear-gradient(#ffffff, #f2f2f2);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f2f2f2));
+		background: -webkit-linear-gradient(#ffffff, #f2f2f2);
+		background: -o-linear-gradient(#ffffff, #f2f2f2);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f2f2f2');
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f2f2f2')";
+		background: linear-gradient(#ffffff, #f2f2f2);
+	}
+	.imgupload h2, .info, .error {
+		margin: 10px 0;
+	}	
+	.step2, .error {
+		display: none;
+	}
+	.error {
+	}
+	.info {
+	}	
